@@ -1,5 +1,6 @@
+
 item1 = {
-	iname: "Bacon", weight: 100, price: 500, category: "food" 
+	iname: "Purple Hippo", weight: 100, price: 500, category: "food" 
 }
 
 item2 = {
