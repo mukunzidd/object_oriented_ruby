@@ -3,10 +3,10 @@ class Item
 	attr_reader :price, :item_name, :category
 	attr_writer :price
 
-	def initialize(input_item_name, input_item_price, input_item_category)
-		@item_name = input_item_name
-		@price = input_item_price
-		@category = input_item_category
+	def initialize(item_hash)
+		@item_name = item_hash[:item_name]
+		@price = item_hash[:price]
+		@category = item_hash[:category]
 	end
 
 	def info
@@ -15,8 +15,11 @@ class Item
 
 end
 
-phone = Item.new("iPhone7", 1080,"Electronics")
+phone = Item.new({item_name: "iPhone7", price: 1080, category: "Electronics"})
 
 phone.price = 1200
 
 puts phone.info
+
+
+
