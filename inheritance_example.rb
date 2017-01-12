@@ -31,7 +31,7 @@ end
 
 
 benz = Car.new
-bikeey = Bike.new
+bikey = Bike.new
 
 puts benz.honk_horn
 puts bikeey.ring_bell
